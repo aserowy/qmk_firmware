@@ -20,6 +20,7 @@
           pkgs.mkShell rec {
             buildInputs = [
               qmk
+              via
             ];
             shellHook = ''
             '';
