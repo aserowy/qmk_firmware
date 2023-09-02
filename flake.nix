@@ -19,8 +19,8 @@
         devShell =
           pkgs.mkShell rec {
             buildInputs = [
+              llvmPackages_16.clang-unwrapped
               qmk
-              via
             ];
             shellHook = ''
             '';
