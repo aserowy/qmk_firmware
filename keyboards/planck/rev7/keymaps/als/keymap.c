@@ -1,9 +1,9 @@
 #include QMK_KEYBOARD_H
 
-enum unicode_names { AE_L, AE_U, OE_L, OE_U, UE_L, UE_U };
+enum unicode_names { AE_L, AE_U, EURO, OE_L, OE_U, SZ, UE_L, UE_U };
 
 const uint32_t PROGMEM unicode_map[] = {
-    [AE_L] = 0x00E4, [AE_U] = 0x00C4, [OE_L] = 0x00F6, [OE_U] = 0x00D6, [UE_L] = 0x00FC, [UE_U] = 0x00DC,
+    [AE_L] = 0x00E4, [AE_U] = 0x00C4, [EURO] = 0x20AC, [OE_L] = 0x00F6, [OE_U] = 0x00D6, [SZ] = 0x00DF, [UE_L] = 0x00FC, [UE_U] = 0x00DC,
 };
 
 // clang-format off
@@ -34,8 +34,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     QK_BOOT,        KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                          KC_TRNS,        KC_NO,          KC_NO,          KC_NO,          KC_NO),
 
 [4] = LAYOUT_planck_1x2uC(
-    KC_NO,          KC_NO,          UC_WINC,        KC_NO,          KC_NO,          KC_NO,          KC_NO,          UP(UE_L, UE_U), KC_NO,          UP(OE_L, OE_U), KC_NO,          KC_NO,
-    KC_NO,          UP(AE_L, AE_U), KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          UC_LINX,        KC_NO,          KC_NO,
+    KC_NO,          KC_NO,          UC_WINC,        UM(EURO),       KC_NO,          KC_NO,          KC_NO,          UP(UE_L, UE_U), KC_NO,          UP(OE_L, OE_U), KC_NO,          KC_NO,
+    KC_NO,          UP(AE_L, AE_U), UM(SZ),         KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          UC_LINX,        KC_NO,          KC_NO,
     KC_LSFT,        KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          UC_MAC,         KC_NO,          KC_NO,          KC_NO,          KC_NO,
     KC_NO,          KC_NO,          KC_NO,          KC_TRNS,        KC_NO,          KC_NO,                          KC_NO,          KC_TRNS,        KC_NO,          KC_NO,          KC_NO)
 
