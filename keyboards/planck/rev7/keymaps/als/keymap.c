@@ -16,22 +16,22 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_LCTL,        KC_LGUI,        KC_LALT,        MO(4),          MO(2),          KC_SPC,                         MO(3),          MO(4),          KC_RALT,        KC_RGUI,        KC_RCTL),
 
 [1] = LAYOUT_planck_1x2uC(
-    KC_ESC,         KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_BSPC,
-    KC_TRNS,        KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_LEFT,        KC_DOWN,        KC_UP,          KC_RGHT,        KC_NO,          KC_DEL,
-    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,
-    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO),
+    KC_ESC,         KC_NO,          RGB_TOG,        RGB_MOD,        KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_BSPC,
+    KC_TRNS,        KC_NO,          RGB_HUD,        RGB_HUI,        KC_NO,          KC_HOME,        KC_LEFT,        KC_DOWN,        KC_UP,          KC_RGHT,        KC_END,         KC_DEL,
+    KC_NO,          KC_NO,          RGB_SAD,        RGB_SAI,        KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,
+    DB_TOGG,        QK_BOOT,        RGB_VAD,        RGB_VAI,        KC_NO,          KC_NO,                          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO),
 
 [2] = LAYOUT_planck_1x2uC(
     KC_GRV,         KC_F1,          KC_F2,          KC_F3,          KC_F4,          KC_F5,          KC_NO,          KC_NO,          KC_NO,          KC_LBRC,        KC_RBRC,        KC_BSLS,
     KC_NO,          KC_1,           KC_2,           KC_3,           KC_4,           KC_5,           KC_6,           KC_7,           KC_8,           KC_9,           KC_0,           KC_NO,
     KC_NO,          KC_F6,          KC_F7,          KC_F8,          KC_F9,          KC_F10,         KC_F11,         KC_F12,         KC_COMM,        KC_DOT,         KC_PMNS,        KC_PEQL,
-    DB_TOGG,        KC_NO,          KC_NO,          KC_NO,          KC_TRNS,        KC_NO,                          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO),
+    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_TRNS,        KC_NO,                          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO),
 
 [3] = LAYOUT_planck_1x2uC(
     KC_TILD,        KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_LCBR,        KC_RCBR,        KC_PIPE,
     KC_NO,          KC_EXLM,        KC_AT,          KC_HASH,        KC_DLR,         KC_PERC,        KC_CIRC,        KC_AMPR,        KC_ASTR,        KC_LPRN,        KC_RPRN,        KC_NO,
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_UNDS,        KC_PLUS,
-    QK_BOOT,        KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                          KC_TRNS,        KC_NO,          KC_NO,          KC_NO,          KC_NO),
+    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                          KC_TRNS,        KC_NO,          KC_NO,          KC_NO,          KC_NO),
 
 [4] = LAYOUT_planck_1x2uC(
     KC_NO,          KC_NO,          UC_WINC,        UM(EURO),       KC_NO,          KC_NO,          KC_NO,          UP(UE_L, UE_U), KC_NO,          UP(OE_L, OE_U), KC_NO,          KC_NO,
