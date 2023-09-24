@@ -19,6 +19,7 @@
         devShell =
           pkgs.mkShell rec {
             buildInputs = [
+              nil
               llvmPackages_16.clang-unwrapped
               qmk
             ];
